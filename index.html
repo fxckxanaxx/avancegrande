@@ -241,11 +241,6 @@
     </div>
 
     <script>
-        // Redirigir al login si no hay sesión activa
-        const sesion = sessionStorage.getItem('usuarioLogueado');
-        if (!sesion) {
-            window.location.href = 'login.html';
-        }
         async function cargarEstadisticas() {
             let ordenes = [];
             try {
@@ -298,4 +293,5 @@
     </script>
 </body>
 </html>
+
 
